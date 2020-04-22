@@ -202,9 +202,8 @@ def checkPermissions():
         if getuid() == 0:
             print("{0}Permissions granted!".format(GREEN))
         else:
-            print(
-                "{0}Permissions denied! Please run as '{1}sudo{0}'".format(RED, GREEN))
-            exit()
+            print("{0}If Possible ! Please run as '{1}sudo{0}'".format(RED, GREEN))
+            sleep(4)
     else:
         print("{0}Windows system not yet compatible. Make sure you're using a *Unix OS.{1}".format(RED, DEFAULT))
         exit()
