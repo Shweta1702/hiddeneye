@@ -63,7 +63,7 @@ def verCheck(): #Version Check For Latest Updates.
             sleep(5)
             system("clear")
     else:
-        print('{1}[{0}^{1}] {0}Failed To Get Update [Status:{1}{3}{0}]\n'.format(GREEN, RED, DEFAULT))
+        print('{1}[{0}^{1}] {0}Failed To Get Update [Status:{1}ErrorCodeReturn{0}]\n'.format(GREEN, RED, DEFAULT))
 
 def checkPHP(): # PHP installation Check
     if 256 != system('which php > /dev/null'): 
