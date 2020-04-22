@@ -14,7 +14,7 @@
 
 <p align="center">
   <a href="https://github.com/darksecdevelopers"><img title="Open Source Love" src="https://badges.frapsoft.com/os/v3/open-source.svg?v=102" ></a>
-  <a href="https://github.com/DarkSecDevelopers/HiddenEye/releases"><img title="GitHub version" src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.5.3&x2=0" ></a>  
+  <a href="https://gitlab.com/an0nud4y/HiddenEye/releases"><img title="GitHub version" src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.5.3&x2=0" ></a>  
 </p>
 
 # DEVELOPERS & CONTRIBUTORS
@@ -33,13 +33,12 @@
 1) LOCALXPOSE (https://localxpose.io)
 2) SERVEO (https://serveo.net/)
 3) NGROK (https://ngrok.com/)
-4) LOCALTUNNEL (Package Version) (https://localtunnel.me)
-5) LOCALTUNNEL (Binary Version) (https://www.wa4e.com/downloads/)
-6) OPENPORT (https://openport.io/)
-7) PAGEKITE (https://pagekite.net/)
+4) LOCALTUNNEL (https://localtunnel.me)
+5) OPENPORT (https://openport.io/)
+6) PAGEKITE (https://pagekite.net/)
 
 # SCREENSHOT (Android-Userland)
-![Shot](https://github.com/DarkSecDevelopers/HiddenEye/blob/master/Screenshot.png)
+![Shot](https://gitlab.com/An0nUD4Y/hiddeneye/-/raw/master/Screenshot.png)
 
 
 ## CREDIT:-
@@ -96,10 +95,10 @@
 
 **(B) Termux App**
   - You Have to Download Termux App. [Click Here](https://play.google.com/store/apps/details?id=com.termux) To Download it.
-  - For Further instruction [Check Instructions](https://github.com/DarkSecDevelopers/HiddenEye/blob/master/instructions.md)
+  - For Further instruction [Check Instructions](https://gitlab.com/An0nUD4Y/hiddeneye/-/blob/master/instructions.md)
   - Termux Users Clone With This Command , Unless Errors may occur during Running.
 ```
-git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEye.git
+git clone -b Termux-Support-Branch https://gitlab.com/an0nud4y/HiddenEye.git
 
 ```
 **5) NEW LOOK PROVIDED**
@@ -134,9 +133,8 @@ git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEy
   - GDRIVE (By @thewhiteh4t)
 ## [Check This](https://youtu.be/InSdtLhZzk4) Demonstration video to know How (Location) Social-Engineering-Tool Works.
  
-## FOR FURTHER INSTALLATION PROCEDURE - [(CHECK INSTRUCTIONS)](https://github.com/DarkSecDevelopers/HiddenEye/blob/master/instructions.md)
+## FOR FURTHER INSTALLATION PROCEDURE - [(CHECK INSTRUCTIONS)](https://gitlab.com/An0nUD4Y/hiddeneye/-/blob/master/instructions.md)
 
-## TEST/CHECK ALL AVAILABLE PHISHING PAGES - [(TEST/CHECK HERE)](https://github.com/DarkSecDevelopers/HiddenEye/blob/master/Test-Phishing/README.md)
 </p>
 
 <h3>Ascii error fix</h3>
