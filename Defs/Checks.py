@@ -71,7 +71,7 @@ def checkPHP(): # PHP installation Check
     
     else:
         print("{1}[{0}>{1}] {0}PHP {0}- {1}[NOT-INSTALLED]\n{1}[{0}>{1}] {0}Installing PHP... ".format(GREEN, RED, DEFAULT))
-        system('apt-get install php /dev/null 2>&1')
+        system('apt-get install php > /dev/null 2>&1')
         checkPHP()
 def checkNgrok():  # Ngrok check
     if path.isfile('Server/ngrok') == False:  # Is Ngrok downloaded?
@@ -86,7 +86,7 @@ def checkNgrok():  # Ngrok check
             else:
                 filename = 'ngrok-stable-{0}-386.zip'.format(ostype)
         url = 'https://bin.equinox.io/c/4VmDzA7iaHb/' + filename
-        req = requests.get(url)
+        req = requests.get(url , verify=False)
         with open(filename, "wb") as file_obj:
             file_obj.write(req.content)
         system('unzip ' + filename + '> /dev/null 2>&1')
@@ -110,7 +110,7 @@ def checkOpenport(): # Openport Check
 			else:
 				filename = 'debian32/latest.deb'.format(ostype)
 		url = 'https://openport.io/download/' + filename
-		req = requests.get(url)
+		req = requests.get(url , verify=False)
 		filename2 = 'openport.deb'
 		with open(filename2, "wb") as file_obj:
 			file_obj.write(req.content)
@@ -130,7 +130,7 @@ def checkPagekite(): # Check Pagekite
 		print("{1}[{0}>{1}] {0}PAGEKITE {0}- {1}[NOT-INSTALLED]".format(GREEN, RED))
 		print("{1}[{0}>{1}] {0}Installing PAGEKITE...".format(GREEN, RED))
 		url = 'https://pagekite.net/pk/pagekite.py'
-		req = requests.get(url)
+		req = requests.get(url , verify=False)
 		filename = 'pagekite.py'
 		with open(filename, "wb") as file_obj:
 			file_obj.write(req.content)
@@ -150,7 +150,7 @@ def checkLocalxpose():  # Localxpose check
             else:
                 filename = 'loclx-linux-386.zip'.format(ostype)
         url = 'https://lxpdownloads.sgp1.digitaloceanspaces.com/cli/'+filename
-        req = requests.get(url)
+        req = requests.get(url , verify=False)
         with open("loclx-linux-download.zip", "wb") as file_obj:
             file_obj.write(req.content)
         system('unzip loclx-linux-download.zip > /dev/null 2>&1 && rm loclx-linux-download.zip > /dev/null 2>&1')
@@ -202,7 +202,8 @@ def checkPermissions():
         if getuid() == 0:
             print("{0}Permissions granted!".format(GREEN))
         else:
-            print("{0}If Possible ! Please run as '{1}sudo{0}'".format(RED, GREEN))
+            print(
+                "{0}If Possible ! Please run as '{1}sudo{0}'".format(RED, GREEN))
             sleep(4)
     else:
         print("{0}Windows system not yet compatible. Make sure you're using a *Unix OS.{1}".format(RED, DEFAULT))
