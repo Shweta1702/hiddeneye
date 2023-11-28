@@ -17,16 +17,6 @@
   <a href="https://gitlab.com/an0nud4y/HiddenEye/releases"><img title="GitHub version" src="https://d25lcipzij17d.cloudfront.net/badge.svg?id=gh&type=6&v=0.5.3&x2=0" ></a>  
 </p>
 
-# DEVELOPERS & CONTRIBUTORS
-
-1) ANONUD4Y (https://github.com/An0nUD4Y)
-2) USAMA ABDUL SATTAR (https://github.com/usama7628674)
-3) sTiKyt (https://github.com/sTiKyt)
-4) UNDEADSEC (https://github.com/UndeadSec)
-5) Micrafast (https://github.com/Micrafast)
-6) Moltivie (https://github.com/Moltivie)
-7) endbehavi0r (https://github.com/endbehavi0r)
-8) ___________ (WAITING FOR YOU)
 
 # AVAILABLE TUNNELLING OPTIONS**
 0) LOCALHOST 
